@@ -8,6 +8,13 @@ import ResultURL from 'components/molecules/ResultURL';
 import SearchResult from 'components/organisms/SearchResult/SearchResult';
 import TabItem from 'components/atoms/TabItem';
 import SearchTabs from 'components/molecules/SearchTabs';
+import Searchbar from 'components/molecules/Searchbar';
+import Prediction from 'components/atoms/Prediction';
+import SearchPredictions from 'components/molecules/SearchPredictions';
+import SearchButtons from 'components/molecules/SearchButtons';
+import PageNumber from 'components/atoms/PageNumber';
+import Page from 'components/molecules/Page';
+import Pagination from 'components/organisms/Pagination';
 
 function Components() {
   const [state, setState] = useState('');
@@ -31,6 +38,10 @@ function Components() {
       <SearchResult />
 
       <SearchTabs></SearchTabs>
+
+      <Searchbar />
+      <SearchButtons />
+      <Pagination />
     </div>
   );
 }
