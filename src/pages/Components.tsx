@@ -15,6 +15,10 @@ import SearchButtons from 'components/molecules/SearchButtons';
 import PageNumber from 'components/atoms/PageNumber';
 import Page from 'components/molecules/Page';
 import Pagination from 'components/organisms/Pagination';
+import InfoText from 'components/atoms/InfoText';
+import Title from 'components/atoms/Title';
+import KnowlodgeHeader from 'components/molecules/KnowlodgeHeader';
+import Knowlodge from 'components/organisms/Knowlodge';
 
 function Components() {
   const [state, setState] = useState('');
@@ -42,6 +46,7 @@ function Components() {
       <Searchbar />
       <SearchButtons />
       <Pagination />
+      <Knowlodge />
     </div>
   );
 }
